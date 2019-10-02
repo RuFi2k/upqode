@@ -1,0 +1,222 @@
+.about{
+    display: flex;
+    align-items: center;
+    padding: 120px 130px 0;
+    justify-content: space-between;
+}
+
+.about-info>h3{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 35px;
+    margin-bottom: 0;
+}
+
+.about-info>h3 span{
+    color: #009dda;
+}
+
+.about-info>p{
+    width: 520px;
+    font-size: 0.9rem;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 60px;
+}
+
+.about .pseudo-header{
+    color: grey;
+    font-size: 0.85rem;
+}
+
+.skills h3{
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.skills h3>p{
+    float: right;
+}
+
+ .skill-bar{
+     display: flex;
+     align-items: center;
+     height: 9px;
+     border: 1px solid grey;
+     padding: 2px;
+     overflow: hidden;
+     margin-top: 20px;
+     margin-bottom: 40px;
+}
+
+.skill-bar span{
+    height: 3px;
+    float: left;
+    background-color: #009dda;
+}
+
+.photoshop-skill{
+    width: 79%;
+    display: none;
+    /* animation: photoshop 2s; */
+}
+
+.html-skill{
+    width: 90%;
+    display: none;
+    /* animation: html 2s; */
+}
+
+.js-skill{
+    width: 69%;
+    display: none;
+    /* animation: js 2s; */
+}
+
+.wordpress-skill{
+    width: 92%;
+    display: none;
+    /* animation: wordpress 2s; */
+}
+
+@keyframes photoshop{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 79%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 69%;
+    }
+}
+
+@keyframes wordpress{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .about{
+        padding: 120px 50px 0;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .ipad-img img{
+        width: 300px;
+    }
+
+    .about-info>p{
+        width: 400px;
+        font-size: 0.75rem;
+    }
+
+    .about .pseudo-header{
+        font-size: 0.7rem;
+    }
+
+    .about-info>h3{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .about{
+        flex-direction: row-reverse;
+    }
+
+    .ipad-img{
+        display: none;
+    }
+
+    .about-info{
+        width: 100%;
+    }
+
+    .about-info>p{
+        width: 600px;
+        font-size: 1rem;
+    }
+
+    .about .pseudo-header{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .about{
+        padding: 60px 50px;
+    }
+    
+    .about-info>p{
+        width: 400px;
+        font-size: 0.75rem;
+        padding-bottom: 30px;
+    }
+
+    .about .pseudo-header{
+        font-size: 0.7rem;
+    }
+
+    .skills h3{
+        font-size: 0.75rem;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about{
+        padding: 45px 20px 0;
+    }
+    
+    .about-info>p{
+        width: 280px;
+        font-size: 0.6rem;
+        padding-bottom: 30px;
+    }
+
+    .about-info>h3{
+        font-size: 0.9rem;
+        padding-bottom: 15px;
+    }
+
+    .about .pseudo-header{
+        font-size: 0.55rem;
+        padding-bottom: 15px;
+    }
+
+    .skills h3{
+        font-size: 0.6rem;
+    }
+
+    .skill-bar{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}

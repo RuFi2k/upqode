@@ -1,0 +1,289 @@
+.get-in-touch{
+    padding-top: 120px;
+}
+
+.touch-title{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.touch-title h3{
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 35px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+.touch-title h3 span{
+    color: #009dda;
+}
+
+.touch-title p{
+    width: 700px;
+    color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.95rem;
+    padding-bottom: 85px;
+}
+
+#map-canvas {
+    height: 635px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+  
+#container {
+    position: relative; 
+    z-index: 1;
+    width: 945px;
+    height: 435px;
+    padding: 80px 65px;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address{
+    width: 195px;
+    padding-bottom: 35px;
+}
+
+.phone-number:nth-child(3){
+    padding-bottom: 40px;
+}
+
+.send-message{    
+    font-size: 0.9rem;
+    font-family: "Lato", sans-serif;
+}
+
+.send-message textarea{
+    resize: none;
+    width: 490px;
+    height: 145px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px 20px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.send-message div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send-message>div>input{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px 20px;
+    width: 240px;
+    border: 1px solid grey;
+    margin-bottom: 13px;
+    color: #fff;
+}
+
+.send-message p{
+    padding-left: 10px;
+}
+
+.checkbox{
+    width: 23px;
+    height: 23px;
+}
+
+.send-message button{
+    padding: 20px 43px;
+    font-size: 1rem;
+    background-color: yellow;
+    border: none;
+    color: #000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+  color: grey;
+}
+
+.container input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 23px;
+    width: 23px;
+}
+
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    margin-right: 11px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid grey;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: grey;
+}
+
+.error-menu{
+    height: 1rem;
+    font-size: 1rem;
+    color: red;
+}
+
+@media screen and (max-width: 1050px){
+    #container{
+        width: 800px;
+    }
+
+    .send-message textarea{
+        width: 400px;
+    }
+
+    .send-message>div>input{
+        width: 195px;
+    }
+
+    .send-message button{
+        padding: 15px 30px;
+    }
+
+    .container{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #container{
+        flex-direction: column;
+        width: 450px;
+        padding: 30px 25px;
+    }
+
+    .location-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.75rem;
+    }
+
+    .location-info>p{
+        width: 140px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 775px){
+    .get-in-touch{
+        padding-top: 60px;
+    }
+
+    .touch-title h3{
+        padding-bottom: 20px;
+        font-size: 1.25rem;
+        font-weight: bolder;
+    }
+
+    .touch-title p{
+        width: 450px;
+        padding-bottom: 40px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .get-in-touch{
+        padding-top: 25px;
+    }
+    
+    .touch-title p{
+        width: 300px;
+        padding-bottom: 30px;
+        font-size: 0.6rem;
+    }
+
+    .touch-title h3{
+        padding-bottom: 20px;
+        font-size: 0.6rem;
+    }
+
+    #container{
+        height: 425px;
+        width: 300px;
+        padding: 20px 15px;
+    }
+
+    .send-message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .send-message textarea{
+        width: 225px;
+        padding: 10px 15px;
+    }
+
+    .send-message>div{
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .send-message>div>input{
+        width: 225px;
+        padding: 10px 15px;
+    }
+
+    .send-message button{
+        padding: 10px 20px;
+        font-size: 0.75rem;
+    }
+
+    .container{
+        font-size: 1rem;
+    }
+
+    .location-info{
+        font-size: 0.5rem;
+    }
+
+    .location-info>p{
+        width: 87px;
+    }
+
+    .checkmark{
+        width: 12px;
+        height: 12px;
+    }
+
+    .container{
+        font-size: 0.75rem;
+    }
+
+    .container input{
+        width: 12px;
+        height: 12px;
+    }
+
+    #map-canvas{
+        height: 625px;
+    }
+}
